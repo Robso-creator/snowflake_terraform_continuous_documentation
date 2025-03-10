@@ -1,0 +1,27 @@
+name: Terraform Workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  terraform:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout código
+        uses: actions/checkout@v2
+
+      - name: Configurar Terraform
+        uses: hashicorp/setup-terraform@v1
+
+      - name: Inicializar Terraform
+        run: terraform init
+
+      - name: Aplicar Terraform
+        env:
+          TF_VAR_organization_name: ${{ secrets.ORGANIZATION_NAME }}
+          TF_VAR_account_name: ${{ secrets.ACCOUNT_NAME }}
+          TF_VAR_user: ${{ secrets.USER }}
+          TF_VAR_password: ${{ secrets.PASSWORD }}
+        run: terraform apply -auto-approve
