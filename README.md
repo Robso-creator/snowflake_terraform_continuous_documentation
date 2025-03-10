@@ -5,9 +5,9 @@ Repositório modelo para aplicação de Continuos Documentation ao Snowflake uti
 O mais importante desse repositório é o fluxo de CI/CD que roda os testes e impede o merge de PRs inconsistentes
 
 ## O que é Continuos Documentation?
-A documentação contínua é uma abordagem que integra a documentação ao ciclo de desenvolvimento, garantindo que ela seja 
-criada e atualizada simultaneamente às mudanças no código ou na infraestrutura. Diferente da documentação tradicional, 
-que muitas vezes é tratada como um processo separado e posterior ao desenvolvimento, a documentação contínua é parte 
+A documentação contínua é uma abordagem que integra a documentação ao ciclo de desenvolvimento, garantindo que ela seja
+criada e atualizada simultaneamente às mudanças no código ou na infraestrutura. Diferente da documentação tradicional,
+que muitas vezes é tratada como um processo separado e posterior ao desenvolvimento, a documentação contínua é parte
 integrante do fluxo de trabalho.
 
 Para ambientes de dados modernos, especialmente aqueles que utilizam Snowflake e Terraform, a documentação contínua oferece benefícios cruciais:
@@ -16,8 +16,8 @@ Para ambientes de dados modernos, especialmente aqueles que utilizam Snowflake e
 - Aceleração da integração: novos membros da equipe conseguem compreender a arquitetura mais rapidamente
 - Melhor governança: facilita auditorias e processos de compliance com documentação sempre precisa e atualizada
 
-Quando aplicada ao Snowflake e Terraform, a documentação contínua permite que as equipes mantenham um registro claro e 
-preciso de todos os objetos de banco de dados, permissões, recursos de infraestrutura e suas configurações, 
+Quando aplicada ao Snowflake e Terraform, a documentação contínua permite que as equipes mantenham um registro claro e
+preciso de todos os objetos de banco de dados, permissões, recursos de infraestrutura e suas configurações,
 sem esforço manual adicional.
 
 ## Setup
@@ -65,8 +65,8 @@ Para executar o segundo, é necessário a seguinte configuração:
 
 Após `fork` do projeto:
 
-1. Acesse a aba **Settings** (Configurações). 
-2. Clique em **Secrets and variables > Actions**. 
+1. Acesse a aba **Settings** (Configurações).
+2. Clique em **Secrets and variables > Actions**.
 3. Adicione os segredos correspondentes às variáveis do Snowflake:
    - `ORGANIZATION_NAME`
    - `ACCOUNT_NAME`
