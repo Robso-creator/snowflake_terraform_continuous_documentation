@@ -47,7 +47,7 @@ terraform init
 ```
 
 ## Rodar testes
-<sub>Só existe um teste que roda especificamente para a tabela `tb_test.tf`</sub>
+<sub>Só existe um teste que roda especificamente para o banco `db_test.tf`</sub>
 
 Use este comando no terminal para executar os testes:
 
