@@ -60,3 +60,15 @@ pytest
 Existem dois worflows atualmente:
 - Um executa os teste pre-merge, se quebrarem, nao permite o merge
 - O outro, aplica as mudanças do Terraform no Snowflake
+
+Para executar o segundo, é necessário a seguinte configuração:
+
+Após `fork` do projeto:
+
+1. Acesse a aba **Settings** (Configurações). 
+2. Clique em **Secrets and variables > Actions**. 
+3. Adicione os segredos correspondentes às variáveis do Snowflake:
+   - `ORGANIZATION_NAME`
+   - `ACCOUNT_NAME`
+   - `USER`
+   - `PASSWORD`
