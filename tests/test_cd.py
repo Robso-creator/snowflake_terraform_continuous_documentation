@@ -1,7 +1,7 @@
 import hcl2
 import pytest
 
-TERRAFORM_FILE = 'modules/db_test/tb_test.tf'
+TERRAFORM_FILE = 'modules/db_test/db_test.tf'
 
 
 @pytest.fixture
